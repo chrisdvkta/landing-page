@@ -1,6 +1,12 @@
 body{
     display:flex;
     flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+*{
+    scroll-behavior:smooth;
 }
 
 ul{
@@ -23,16 +29,21 @@ a{
 
 
 .header{
-    background-color: #b6bbc2;
+    background-color: #1F2937;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0 50px;
+    width:100%;
+    margin-top: -10px;
 }
+
 .nav-links ul{
     display:flex;
     gap: 15px;
 }
+
+/* second section */
 
 .introduction p,
 .introduction h1{
@@ -43,29 +54,33 @@ a{
     background-color:#1F2937;
     display: flex;
     flex-direction:row;
-    padding: 25px;
+    padding: 25px 100px;
+    width:100%;
 }
 
 .context {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: center;
-    
 
 }
 
 .context h1{
-    margin: 0;
+    margin: 1.1em 0;
     padding: 0;
 }
 
-.context button {
-    background-color: #3882F6;
-    padding: 5px 10px;
+.context button, input[type="submit"]{
+    all : unset;
+    padding: 5px 15px;
     border-radius: 10px;
     color: white;
+    background-color: #3882F6;
     font-weight: 700;
+    cursor: pointer;
+    margin-top: 30px;
 }
+
 
 .img-container img{
     height: 100%;
@@ -76,11 +91,142 @@ a{
 .img-container {
     width:450px;
     height: 350px;
-    background-color: red;
+   
 }
 
 
 
 .introduction button {
     margin-right: auto;
+}
+
+/* 3rd section */
+
+.random-facts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ededee;
+    margin: 0 -90px;
+    padding: 20px 0;
+    width:100%;
+}
+
+.random-facts h2{
+    font-style:roboto, sans-serif;
+    font-weight:bolder;
+    font-size: 36px;
+    color: #1F2937;
+    margin: 20px 0;
+    
+}
+
+.placeholder-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+
+}
+
+.placeholder{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 150px;
+}
+
+.fact-image{
+    width: 100px;
+    height: 125px;
+    border: 5px solid blue;
+    border-radius: 8px;
+}
+
+.fact-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.text{
+    text-align: center;
+}
+
+/* quote section */
+
+.quote{
+    padding: 80px 30px;
+    background-color:#E5E7EB;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-style:roboto, sans-serif;
+    font-weight: 400;
+    width: 100%;
+}
+
+cite{
+    margin: 10px 0;
+    width: 600px;
+}
+
+.quote p{
+    margin-left : 400px;
+    font-weight: 900;
+}
+
+/* action call */
+
+.actionCall{  
+    display: flex;
+    margin: 50px auto;
+    background-color: rgb(159, 209, 255);
+    padding: 70px 80px;
+    border-radius: 10px;
+    gap: 0 50px;
+}
+h3{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.actionCall>.text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+ .actionCall button{
+    all : unset;
+    padding: 5px 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color:white;
+    font-weight: 700;
+    cursor: pointer;
+
+} 
+
+button:focus{
+    outline: #274c88 2px solid; 
+}
+
+button:hover {
+    background-color:blue;
+}
+
+footer{
+    background-color:#1F2937;
+    color: white;
+    padding: 20px; 
+    width:100%;
+    text-align:center;
+    margin-bottom: -90px;
 }
