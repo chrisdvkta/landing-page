@@ -1,8 +1,9 @@
-body{
+#container{
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
+    /* justify-content:center; */
+    
 }
 
 *{
@@ -20,7 +21,7 @@ a{
     color:white;
 }
 
-.image img{
+.image>img{
      height: 50px;
      width:auto;
      margin: 0;
@@ -66,7 +67,7 @@ a{
 }
 
 .context h1{
-    margin: 1.1em 0;
+    margin: 10px 0;
     padding: 0;
 }
 
@@ -102,17 +103,17 @@ a{
 
 /* 3rd section */
 
-.random-facts{
-    display: flex;
+ .random-facts{
+     background-color: #ededee;
+     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ededee;
     margin: 0 -90px;
-    padding: 20px 0;
+    padding: 20px 20px;
     width:100%;
-}
+} 
 
-.random-facts h2{
+.random-facts>h2{
     font-style:roboto, sans-serif;
     font-weight:bolder;
     font-size: 36px;
@@ -133,11 +134,11 @@ a{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    width: 150px;
+     width: 150px;
 }
 
 .fact-image{
-    width: 100px;
+     width: 100px; 
     height: 125px;
     border: 5px solid blue;
     border-radius: 8px;
@@ -146,12 +147,12 @@ a{
 .fact-image img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
-}
+     object-fit: contain; 
+} 
 
-.text{
+ .text{
     text-align: center;
-}
+} 
 
 /* quote section */
 
