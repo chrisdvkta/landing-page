@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+}
+
+
 #container{
     display:flex;
     flex-direction: column;
@@ -25,7 +30,8 @@ a{
      height: 50px;
      width:auto;
      margin: 0;
-     padding: 0;
+     padding: 10px 5px;
+     
 }
 
 
@@ -34,11 +40,14 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
-    width:100%;
+    /* padding: 0 50px; */
+    width : 100%;
     margin-top: -10px;
 }
 
+.nav-links {
+    margin-right : 5px;
+}
 .nav-links ul{
     display:flex;
     gap: 15px;
@@ -55,9 +64,12 @@ a{
     background-color:#1F2937;
     display: flex;
     flex-direction:row;
-    padding: 25px 100px;
+    justify-content: space-around;
+    padding: 25px 0px;
     width:100%;
-}
+ } 
+
+
 
 .context {
     display: flex;
@@ -80,6 +92,7 @@ a{
     font-weight: 700;
     cursor: pointer;
     margin-top: 30px;
+    transition: 0.3s;
 }
 
 
@@ -109,7 +122,7 @@ a{
     flex-direction: column;
     align-items: center;
     margin: 0 -90px;
-    padding: 20px 20px;
+    padding: 20px 0px;
     width:100%;
 } 
 
@@ -156,17 +169,30 @@ a{
 
 /* quote section */
 
-.quote{
-    padding: 80px 30px;
+/* .quote{
+    padding: 80px;
     background-color:#E5E7EB;
+    display: flex;
+    
+    font-style:roboto, sans-serif;
+    font-weight: 400;
+    width: 100%;
+} */
+/* CLoned 2nd section with third  */
+.quote{
+    background-color: #E5E7EB;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    font-style:roboto, sans-serif;
+   align-items: center;
+   font-style:roboto, sans-serif;
     font-weight: 400;
-    width: 100%;
-}
+   margin: 0 -90px;
+   padding: 20px 0px;
+   width:100%;
+} 
+
 
 cite{
     margin: 10px 0;
@@ -174,7 +200,7 @@ cite{
 }
 
 .quote p{
-    margin-left : 400px;
+    /* margin-left : 400px; */
     font-weight: 900;
 }
 
@@ -184,7 +210,7 @@ cite{
     display: flex;
     margin: 50px auto;
     background-color: rgb(159, 209, 255);
-    padding: 70px 80px;
+    padding: 70px 20px;
     border-radius: 10px;
     gap: 0 50px;
 }
@@ -212,6 +238,7 @@ p{
     color:white;
     font-weight: 700;
     cursor: pointer;
+    transition: 0.3s;
 
 } 
 
@@ -220,13 +247,13 @@ button:focus{
 }
 
 button:hover {
-    background-color:blue;
+    background-color:rgb(82, 82, 205);
 }
 
 footer{
     background-color:#1F2937;
     color: white;
-    padding: 20px; 
+    padding: 20px 0px; 
     width:100%;
     text-align:center;
     margin-bottom: -90px;
