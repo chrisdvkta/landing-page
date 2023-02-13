@@ -196,7 +196,7 @@ a{
 
 cite{
     margin: 10px 0;
-    width: 600px;
+    width: fit-content;
 }
 
 .quote p{
